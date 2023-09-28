@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+    
+                <form method="POST" action="">
+                  
+                
+                <!-- Updated for the five questions -->
+                <label for="q_1">1. Contributed to fair share of work</label><br>
+                <div class="star-rating-container">
+                    <?php for ($rating = 5; $rating >= 1; $rating--) : ?>
+                        <input type="radio" name="q_1" value="<?php echo $rating; ?>" class="star" id="q_1_<?php echo $rating; ?>">
+                        <label class="star" for="q_1_<?php echo $rating; ?>"></label>
+                    <?php endfor; ?>
+                </div>
+                <br>
+                
+                <!-- submit -->
+                    <input class="submit-btn px-5 my-2" type="submit" name="submit" value="Add Details">
+                </form>
+    
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
